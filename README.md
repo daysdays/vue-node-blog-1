@@ -20,8 +20,8 @@
 ## 如何运行
 
 下载项目
-```
- git clone https://github.com/canfoo/vue2.0-taopiaopiao.git
+```bash
+ git clone https://github.com/canfoo/vue-node-blog.git
 ```
  打开终端进入到client目录安装依赖包
 ```
