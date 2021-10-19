@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 头部区域 -->·
     <header>
       <div class="explain">
         <h1>Banana's Blog</h1>
@@ -41,6 +42,7 @@ export default {
     };
   },
 
+  // 周期函数
   created() {
     // 获取全部文章
     this.$http.get("getHome").then((res) => {

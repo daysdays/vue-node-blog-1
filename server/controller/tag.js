@@ -12,8 +12,7 @@ exports.insert = (req, res, next) => {
     Tag.insertMany(tag, function (err, res) {
         if (err) {
             console.log('Error:' + err);
-        }
-        else {
+        } else {
             console.log(res);
         }
     })

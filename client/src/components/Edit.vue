@@ -1,5 +1,6 @@
 <template>
   <div class="edit">
+    <!-- 头部区域 -->
     <header>
       <h2>创作中心</h2>
       <br>
@@ -11,7 +12,7 @@
     </header>
     <br />
 
-    <!-- 创作板块 -->
+    <!-- 创作区域 -->
     <el-form
       :model="ruleForm"
       :rules="rules"

@@ -18,8 +18,7 @@ exports.insert = (req, res, next) => {
     Blog.insertMany(blog, function (err, res) {
         if (err) {
             console.log('Error:' + err);
-        }
-        else {
+        } else {
             console.log(res);
         }
     })
@@ -28,7 +27,7 @@ exports.insert = (req, res, next) => {
 
 // 删除数据
 exports.del = (req, res, next) => {
-    var conditions = { title: req.body.title };
+    var conditions = {title: req.body.title};
     console.log(conditions);
 
     Blog.remove(conditions, function (error) {
@@ -43,7 +42,7 @@ exports.del = (req, res, next) => {
 
 // 更新数据
 exports.update = (req, res, next) => {
-    var conditions = { title: req.body.title };
+    var conditions = {title: req.body.title};
     var update = {
         $set: {
             text: req.body.text
@@ -72,7 +71,7 @@ exports.find = (req, res, next) => {
 // 根据title查询（用于打开文章）
 exports.findOne = (req, res, next) => {
     // console.log(req.body);
-    var wherestr = { 'title': req.body.title };
+    var wherestr = {'title': req.body.title};
     Blog.findOne(wherestr).then((data) => {
         console.log(data);
         res.json(data)
@@ -83,7 +82,7 @@ exports.findOne = (req, res, next) => {
 // 根据 tag 查询
 exports.findByTag = (req, res, next) => {
     console.log(req.body);
-    var wherestr = { 'tags': req.body.tag };
+    var wherestr = {'tags': req.body.tag};
 
     Blog.find(wherestr).then((data) => {
         console.log(data);

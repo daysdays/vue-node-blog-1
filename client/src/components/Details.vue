@@ -87,7 +87,5 @@ header {
   margin: 8px 0px 10px;
   overflow: hidden;
 }
-.v-note-wrapper {
-  z-index: 0 !important;
-}
+
 </style>

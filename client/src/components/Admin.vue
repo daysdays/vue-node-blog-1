@@ -1,5 +1,6 @@
 <template>
   <div class="edit">
+    <!-- 头部区域 -->
     <header>
       <h2>用户中心</h2>
       <br>
@@ -25,6 +26,7 @@
           </span>
           </h3>
           
+          <!-- 内容部分 -->
           <div class="blog-content">
             {{ msg.text.slice(0, 60) }}
             <span class="blog-more" @click="$parent.location('/details?title=' + msg.title)">阅读原文...</span>
@@ -44,6 +46,7 @@
 
 <script>
 import "mavon-editor/dist/css/index.css";
+
 export default {
   name: "Admin",
 
@@ -66,12 +69,13 @@ export default {
      handleClick(tab, event) {
         console.log(tab, event);
       },
+      
     // 根据 title 删除文章
     delBlog(title){
       var req = {
         title: title,
       };
-      console.log(req.title);
+      // console.log(req.title);
 
       this.$http.post("del", req).then((res) => {
         console.log("success");
@@ -87,8 +91,6 @@ export default {
       });
     },
   },
-
-
 };
 </script>
 

@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 头部区域 -->
     <header>
       <div class="explain">
         <h1>About</h1>
