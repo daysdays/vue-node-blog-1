@@ -72,10 +72,8 @@
               <b>开发描述：</b><br />
               &emsp;&emsp;1. 使用 Python
               异步方法处理网络请求，提高效率，加快爬取速度<br />
-              &emsp;&emsp;2. 通过 pandas 与 numpy
-              对数据进行清洗，删除脏数据<br />
-              &emsp;&emsp;3. 让 pyecharts
-              获取结果，绑定数据，实现数据可视化<br />
+              &emsp;&emsp;2. 通过 pandas 与 numpy 对数据进行清洗，删除脏数据<br />
+              &emsp;&emsp;3. 让 pyecharts 获取结果，绑定数据，实现数据可视化<br />
               &emsp;&emsp;4. 生成动态 html 文件，并部署到托管主机上
             </p>
             <br />
