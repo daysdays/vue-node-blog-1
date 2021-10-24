@@ -1,5 +1,6 @@
 <template>
   <div id="tag">
+
     <!--  头部区域  -->
     <header>
       <div class="explain">
@@ -71,7 +72,6 @@ export default {
     showTagModel() {
       this.isshowTagModel = !this.isshowTagModel;
     },
-
 
     // 根据标签筛选文章
     selectTag(tag) {

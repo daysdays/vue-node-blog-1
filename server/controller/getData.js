@@ -2,6 +2,37 @@ var Blog = require('../model/model')
 const getData = require('../util/getDate')
 
 
+// 登录
+exports.login = (req, res, next) => {
+    const username = req.body.username;
+    const password = req.body.password;
+
+
+    if (username == 'admin' && password == 'admin') {
+        var reee = {
+            data: {
+                token: 'asxasd'
+            },
+            meta: {
+                status: 200
+            }
+        }
+        res.json(reee)
+        return;
+    } else {
+        var ree = {
+            meta: {
+                status: 1
+            }
+        }
+        res.json(ree)
+        return;
+    }
+
+
+}
+
+
 // 增加数据
 exports.insert = (req, res, next) => {
     var data = {

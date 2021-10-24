@@ -3,7 +3,7 @@ var router = express.Router();
 var getMongo = require('../controller/getData')
 var getTag = require('../controller/tag')
 
-
+router.post('/login', getMongo.login)
 router.get('/getHome', getMongo.find)
 router.get('/getArchives', getMongo.find)
 router.post('/getDetails', getMongo.findOne)
